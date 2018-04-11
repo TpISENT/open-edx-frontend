@@ -1,0 +1,51 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("About")}</%block>
+        </h1>
+        <p>${_("The Open Democracy Project is a not-for-profit startup working to open the democratic process by publishing a shared campaign resource package for councillor and trustee races. DemocracyKit is being built by local campaigners, for local campaigners.")}</p>
+        <p>
+           <br>
+        </p>
+        <h3>${_("The Challenge")}</h3>
+        <p>${_("It's time for a change in municipal politics. When councils across Canada don't reflect the demographics of their cities, and incumbents have a nearly insurmountable advantage over challengers, something must be done to open access to the political system.")}</p>
+        <p style='margin: 0 auto;'>&nbsp;<img class='img-issues' src="https://d3n8a8pro7vhmx.cloudfront.net/groundforce/pages/1933/attachments/original/1482044376/fargy4hgo7is8bv7auqo.jpg" alt="Incumbency Advantage" data-mce-src="fargy4hgo7is8bv7auqo.jpg" data-mce-style="margin-left: 5px; margin-right: 5px;"><img class='img-issues' src="https://d3n8a8pro7vhmx.cloudfront.net/groundforce/pages/1933/attachments/original/1482044378/scckypyaib2z5v5agqb2.jpg" alt="Gender Gap" data-mce-src="scckypyaib2z5v5agqb2.jpg" data-mce-style="margin-left: 5px; margin-right: 5px;"></p>
+        <p>${_("We at the Open Democracy Project believe the process of making elections fair and competitive can begin at the local level with contributions from experienced campaign teams across Canada.")}</p>
+
+        <p>${_("If a community leader decides to run for council or the school board, where do they learn how to build a strong campaign team? It's not something that's taught at college or university, and most cities don't have a party system at the municipal level to provide support. That's where the DemocracyKit comes in helping to equip the next generation of civic leaders")}</p>
+
+        <h3>${_("About DemocracyKit")}</h3>
+        <p>${_("In the last municipal election, Chris Cowperthwaite, Co-Founder of the Open Democracy Project, worked with 17 campaigns in southern Ontario and B.C. and found that each campaign faced strikingly similar challenges - everything from interpreting vague campaign laws to building door-to-door canvass operations from scratch. What if we could use technology to connect municipal campaigners enabling them to share knowledge and tools in an open resource kit?")}</p>
+
+        <p>${_("We can, and it's called DemocracyKit. Focusing on municipal councillor and trustee campaigns, components of our shared resource package will include a knowledge library, campaign plans and online courses designed to be accessible, scalable and locally-tailored.")}</p>
+
+        <img src="https://d3n8a8pro7vhmx.cloudfront.net/groundforce/pages/1933/attachments/original/1482044520/akg1mzhr9kltatys6ini.png" alt="">
+        <br>
+        <img src="https://d3n8a8pro7vhmx.cloudfront.net/groundforce/pages/1933/attachments/original/1482044519/czmkbdgbhrukyohtkrqr.png" alt="">
+
+        <p>${_("Campaigners of all experiences across Ontario, including Toronto Councillors Shelley Carroll and Joe Cressy, London Councillor Jesse Helmer and former Toronto Councillor and MP Olivia Chow have already signed on to contribute ideas and content for DemocracyKit.  Last month the Open Democracy Project hosted successful roundtables in Toronto and London, as well as the first DemocracyKit Town Hall on October 25, 2016 at the YWCA Toronto.")}</p>
+        <img src="https://d3n8a8pro7vhmx.cloudfront.net/groundforce/pages/1933/attachments/original/1482044518/a9pgrcnzkkldcmaxf3uf.jpg" alt="">
+        <br>
+        <img src="https://d3n8a8pro7vhmx.cloudfront.net/groundforce/pages/1933/attachments/original/1482044517/uj3bb5do3nxaoei2ctpp_%281%29.jpg" alt="">
+        <br>
+        <p><a href="http://civictech.ca/">Civic Tech Toronto</a>${_(" is taking part in the development of DemocracyKit.  On November 8, 2016 the project was presented at the group's 67th Hack Night and DemocracyKit's weekly Toronto group meeting is housed at weekly Civic Tech meetups.")}</p>
+        <img src="https://d3n8a8pro7vhmx.cloudfront.net/groundforce/pages/1933/attachments/original/1482044515/tgn846n3ijsbex9h7ifr_%282%29.jpg" alt="">
+        <h3>${_("The Impact")}</h3>
+
+        <p>${_("Mounting a campaign is no easy task, and if we want to increase diversity and reduce the incumbency advantage in municipal races, we need to level the playing field. Toronto City Councillor Shelley Carroll describes the impact of DemocracyKit:")}</p>
+
+        <p>${_("Young political hopefuls come to see me all the time about how to break into local politics... Don't ask a politician. You should ask a real campaign manager, but when you are starting your first kitchen table campaign, you can't. Campaign experts work for veterans. With DemocracyKit, local grassroots candidates would have open access to the tools and training they need to enter any race with the same campaign that well-resourced veterans have access to. That's real democracy.")}</p>
+
+        <p>${_("For those who have taken on the challenge of running for municipal office, the innovative tools developed by independent campaigns often sit unused once elections are over, especially if campaign teams decide not to run again. DemocracyKit acts as a hub, providing a central campaign information centre for future aspiring civic leaders.")}</p>
+
+        <!-- <p>
+            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+        </p> -->
+    </section>
+</main>
